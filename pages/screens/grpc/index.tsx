@@ -2,7 +2,7 @@ import { GrpcWebFetchTransport } from '@protobuf-ts/grpcweb-transport';
 import { PingPongServiceClient } from 'gen/node/pingpong/v1/pingpong.client';
 import type { NextPage } from 'next';
 
-export const GrpcScreen: NextPage = () => {
+const GrpcScreen: NextPage = () => {
   const handleReq = () => {
     const client = new PingPongServiceClient(
       new GrpcWebFetchTransport({
@@ -22,3 +22,5 @@ export const GrpcScreen: NextPage = () => {
     </div>
   );
 };
+
+export default GrpcScreen;
