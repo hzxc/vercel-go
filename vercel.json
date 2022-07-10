@@ -2,11 +2,11 @@
   "routes": [
     {
       "src": "/pingpong.v1.PingPongService",
-      "dest": "/api/api.go"
+      "dest": "/pages/api/api.go"
     },
     {
       "src": "/api/.*",
-      "dest": "/api/api.go"
+      "dest": "/pages/api/api.go"
     }
   ]
 }
